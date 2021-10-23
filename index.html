@@ -10,6 +10,272 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <header class="header">
+      <div class="header-block">
+        <button class="m-menu">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
+        <div class="search">
+          <input type="text" placeholder="Search" class="search-input" />
+        </div>
+        <div class="navigition">
+          <div class="user">
+            <img src="img/avatar.png" alt="avatar" class="user-avatar" />
+            <span class="user-name">Mateusz</span>
+          </div>
+          <nav class="navigition-panel">
+            <a href="#" class="navigation-link">Home</a>
+            <a href="#" class="navigation-link">Create</a>
+          </nav>
+          <div class="icons-panel">
+            <a href="#" class="icons-link">
+              <svg class="header-icon">
+                <use href="img/icons.svg#users-icon"></use>
+              </svg>
+            </a>
+            <a href="#" class="icons-link">
+              <svg class="header-icon">
+                <use href="img/icons.svg#chat-icon"></use>
+              </svg>
+            </a>
+            <a href="#" class="icons-link">
+              <span class="notification">8</span>
+              <svg class="header-icon">
+                <use href="img/icons.svg#bell-icon"></use>
+              </svg>
+            </a>
+            <a href="#" class="icons-link">
+              <svg class="header-icon">
+                <use href="img/icons.svg#info-icon"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="menu-sidebar">
+        <div class="user">
+          <img src="img/avatar.png" alt="avatar" class="user-avatar" />
+          <span class="user-name">Mateusz Wierzbicki</span>
+        </div>
+        <!-- /user -->
+        <nav class="nav-group">
+          <a href="#" class="nav-link active">
+            <svg class="menu-sidebar-icon">
+              <use href="img/icons.svg#news"></use>
+            </svg>
+            <span class="nav-text">News Feed</span>
+          </a>
+          <a href="#" class="nav-link">
+            <svg class="menu-sidebar-icon">
+              <use href="img/icons.svg#messages"></use>
+            </svg>
+            <span class="nav-text">Messages</span>
+          </a>
+          <a href="#" class="nav-link">
+            <svg class="menu-sidebar-icon">
+              <use href="img/icons.svg#marketplace"></use>
+            </svg>
+            <span class="nav-text">Marketplace</span>
+          </a>
+        </nav>
+        <nav class="nav-group">
+          <h3 class="nav-title">Shortcuts</h3>
+          <a href="#" class="nav-link">
+            <svg class="menu-sidebar-icon">
+              <use href="img/icons.svg#cup"></use>
+            </svg>
+            <span class="nav-text">Product Design</span>
+          </a>
+          <a href="#" class="nav-link">
+            <svg class="menu-sidebar-icon">
+              <use href="img/icons.svg#cup"></use>
+            </svg>
+            <span class="nav-text">UX & UI</span>
+          </a>
+          <a href="#" class="nav-link">
+            <svg class="menu-sidebar-icon">
+              <use href="img/icons.svg#cup"></use>
+            </svg>
+            <span class="nav-text">Figma</span>
+          </a>
+          <a href="#" class="nav-link">
+            <svg class="menu-sidebar-icon">
+              <use href="img/icons.svg#cup"></use>
+            </svg>
+            <span class="nav-text">Ant Design</span>
+          </a>
+        </nav>
+        <nav class="nav-group">
+          <h3 class="nav-title">Explore</h3>
+          <a href="#" class="nav-link">
+            <svg class="menu-sidebar-icon">
+              <use href="img/icons.svg#pages"></use>
+            </svg>
+            <span class="nav-text">Pages</span>
+          </a>
+          <a href="#" class="nav-link">
+            <svg class="menu-sidebar-icon">
+              <use href="img/icons.svg#group"></use>
+            </svg>
+            <span class="nav-text">Groups</span>
+          </a>
+          <a href="#" class="nav-link">
+            <svg class="menu-sidebar-icon">
+              <use href="img/icons.svg#events"></use>
+            </svg>
+            <span class="nav-text">Events</span>
+          </a>
+          <a href="#" class="nav-link">
+            <svg class="menu-sidebar-icon">
+              <use href="img/icons.svg#games"></use>
+            </svg>
+            <span class="nav-text">Games</span>
+          </a>
+        </nav>
+      </div>
+      <div class="main-feed">
+        <div class="create-post">
+          <div class="create-post-header">
+            <h4 class="create-post-title">Create post</h4>
+          </div>
+          <div class="create-post-body">
+            <img src="img/avatar.png" alt="" class="user-avatar" />
+            <div class="create-post-input" contenteditable="true">
+              What’s on your mind, Mateusz?
+            </div>
+          </div>
+          <div class="create-post-footer">
+            <button class="tag">
+              <svg class="create-post-icon">
+                <use href="img/icons.svg#photo"></use>
+              </svg>
+              <span class="button-text">Photo/Video</span>
+            </button>
+            <button class="tag">
+              <svg class="create-post-icon">
+                <use href="img/icons.svg#photo"></use>
+              </svg>
+              <span class="button-text">Tag friends</span>
+            </button>
+            <button class="tag">
+              <svg class="create-post-icon">
+                <use href="img/icons.svg#photo"></use>
+              </svg>
+              <span class="button-text">Feeling/Activ...</span>
+            </button>
+            <!-- <button class="tag">
+              <span class="button-text"></span>
+            </button> -->
+          </div>
+        </div>
+        <div class="post">
+          <div class="post-header">
+            <div class="user">
+              <img class="user-avatar" src="img/avatar.png" alt="avatar" />
+              <div class="post-info">
+                <a class="post-avtor">Mateusz Wierzbicki</a>
+                <div class="post-info-time">
+                  <span class="post-time">3 hrs</span>
+                  <svg class="menu-sidebar-icon">
+                    <use href="img/icons.svg#settings"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <button class="post-header-button">
+              <svg class="menu-sidebar-icon">
+                <use href="img/icons.svg#more"></use>
+              </svg>
+            </button>
+          </div>
+          <!-- /.post-header -->
+          <div class="post-content">
+            <p class="post-text">
+              Did you know that all of this was made using only components and
+              styles from Ant Desing System for Figma? Learn more:
+              <a href="https://antforfigma.com">https://antforfigma.com</a>
+            </p>
+            <img src="img/post-imag.jpg" alt="" class="post-image" />
+          </div>
+          <!-- /.post-content -->
+          <div class="likes">
+            <svg class="likes-icon">
+              <use href="img/icons.svg#likes"></use>
+            </svg>
+            <span class="likes-counter">23</span>
+          </div>
+          <!-- /.likes -->
+          <div class="post-footer">
+            <button class="post-button">
+              <svg class="menu-sidebar-icon">
+                <use href="img/icons.svg#post-like"></use>
+              </svg>
+              <span class="post-button-text">Like</span>
+            </button>
+            <button class="post-button">
+              <svg class="menu-sidebar-icon">
+                <use href="img/icons.svg#post-comments"></use>
+              </svg>
+              <span class="post-button-text">Comment</span>
+            </button>
+            <button class="post-button">
+              <svg class="menu-sidebar-icon">
+                <use href="img/icons.svg#post-share"></use>
+              </svg>
+              <span class="post-button-text">Share</span>
+            </button>
+          </div>
+          <!-- /.post-footer -->
+        </div>
+        <!-- /.post -->
+      </div>
+      <!-- /.main-feed -->
+      <div class="right-sidebar">
+        <div class="stories">
+          <div class="stories-header">
+            <h4 class="stories-title">Stories</h4>
+            <div class="stories-buttons">
+              <a href="#" class="stories-button-link">
+                <svg class="stories-icon">
+                  <use href="img/icons.svg#time-icon"></use>
+                </svg>
+                <span class="stories-button-text">Archive</span>
+              </a>
+              <a href="#" class="stories-button-link">
+                <span class="stories-button-text">Settings</span>
+              </a>
+            </div>
+          </div>
+          <a href="#" class="story-item-add">
+            <div class="stories-image">+</div>
+            <div class="story-item-text">
+              <span class="story-title">Add to your story</span>
+              <span class="story-text"
+                >Share a photo or video or write something</span
+              >
+            </div>
+          </a>
+          <a href="#" class="story-item">
+            <div class="stories-image figma"></div>
+            <div class="story-item-text">
+              <span class="story-title">Concuria</span>
+              <span class="story-text">4 hours ago</span>
+            </div>
+          </a>
+          <a href="#" class="story-item">
+            <div class="stories-image figma"></div>
+            <div class="story-item-text">
+              <span class="story-title">Concuria</span>
+              <span class="story-text">4 hours ago</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
     <script src="js/main.js"></script>
   </body>
 </html>
